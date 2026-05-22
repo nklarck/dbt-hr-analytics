@@ -1,0 +1,9 @@
+sources:
+  - name: raw
+    database: hr_analytics
+    schema: raw
+    tables:
+      - name: employees
+        description: Raw employee data from IBM HR Analytics dataset (Kaggle).
+      - name: performance_reviews
+        description: Synthetic performance review records generated to demonstrate joins. Four review periods per employee (2022-H1 through 2023-H2), anchored to the original IBM performance ratings.
