@@ -1,0 +1,5 @@
+models:
+  - name: fct_attrition
+    description: Model for consumption including employee grouping fields and counts of terms, active, and attrition rate.
+  - name: fct_performance_trends
+    description: Model for consumption including employee performance averages by review period. 

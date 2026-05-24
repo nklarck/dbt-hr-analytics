@@ -1,0 +1,5 @@
+models:
+  - name: int_employee_enriched
+    description: Intermediate employee model including age, compensation and tenure bands.
+  - name: int_employee_performance
+    description: Intermediate model joining int_employee_enriched with staged performance ratings. 
