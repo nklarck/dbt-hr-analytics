@@ -9,7 +9,7 @@ A dbt project built on Snowflake modeling IBM HR Analytics data, designed to dem
 
 | Table | Origin | Rows |
 |---|---|---|
-| `raw.employees` | [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-employee-attrition) (Kaggle) | 1,470 |
+| `raw.employees` | [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data) (Kaggle) | 1,470 |
 | `raw.performance_reviews` | Synthetic — generated to demonstrate joins. Four review periods per employee (2022-H1 through 2023-H2), anchored to IBM performance ratings. | 5,880 |
 
 ---
