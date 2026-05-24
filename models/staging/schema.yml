@@ -1,0 +1,40 @@
+models:
+  - name: stg_raw__employees
+    description: Staged employee data from IBM HR Analytics
+    columns:
+      - name: employee_id
+        description: Unique employee identifier
+        tests:
+          - unique
+          - not_null
+      - name: attrition
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Yes', 'No']
+      - name: department
+        tests:
+          - not_null
+  - name: stg_raw__performance_reviews
+    description: Staged performance review data
+    columns:
+      - name: review_id
+        description: Unique performance review identifier
+        tests:
+          - unique
+          - not_null
+      - name: employee_id
+        description: Employee identifier related to te review
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_raw__employees')
+                field: employee_id
+      - name: review_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Mid-Year', 'Annual']
