@@ -64,7 +64,7 @@ tests/
 
 ## Lineage
 
-![dbt Lineage Graph](docs/lineage.png)
+![dbt Lineage Graph](lineage.png)
 
 ---
 
